@@ -1,6 +1,6 @@
 library(caret)
 
-source("./io.R")
+source("../data/io.R")
 
 lime.model <- train(
     Juice.Volume ~ Lime.Weight + Lime.Circumference + Lime.Weight*Lime.Circumference,

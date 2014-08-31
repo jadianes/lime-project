@@ -20,4 +20,4 @@ yhat.config <- c(
     env="http://cloud.yhathq.com/"
 )
 
-yhat.deploy("limeModel")
+yhat.deploy("limeGlm")

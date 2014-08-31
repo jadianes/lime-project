@@ -1,1 +1,0 @@
-lime.df <- read.csv("data/data.csv")
