@@ -1,8 +1,8 @@
-source("./train.R")
+source("./io.R")
 library(yhatr)
 
 model.require <- function() {
-    library(caret)
+
 }
 
 model.transform <- function(df) {
@@ -10,8 +10,7 @@ model.transform <- function(df) {
 }
 
 model.predict <- function(df) {
-    df$pred <- predict(lime.model, newdata=df)
-    df
+    lime.df[df$fromRow:df$toRow,]
 }
 
 config <- read.csv("../config.file.csv")
@@ -22,4 +21,4 @@ yhat.config <- c(
     env="http://cloud.yhathq.com/"
 )
 
-yhat.deploy("limeGlm")
+yhat.deploy("limeData")

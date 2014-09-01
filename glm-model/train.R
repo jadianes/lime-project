@@ -1,6 +1,6 @@
 library(caret)
 
-source("../data/io.R")
+source("./io.R")
 
 
 train.ind = sample(1:dim(lime.df)[1],size=dim(lime.df)[1]/2,replace=F)
