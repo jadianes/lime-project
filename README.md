@@ -1,11 +1,11 @@
 ## About
 
-[yhat](http://www.yhathq.com) project for a lime juicing dataset
+[yhat](http://www.yhathq.com) models for a lime juicing dataset
 
 ### Current models
 
 `limeData`  
-An interface to the raw dataset. Required input parameters:  
+An interface to the raw dataset. Required input parameters:
 *  `fromRow` first row to be retrieved from the dataset (inclusive)
 *  `toRow` last row to be retrieved from the dataset (inclusive)
 
