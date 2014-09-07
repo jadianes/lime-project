@@ -1,8 +1,8 @@
 source("./train.R")
 library(yhatr)
 
+
 model.require <- function() {
-    library(caret)
 }
 
 model.transform <- function(df) {
@@ -10,8 +10,8 @@ model.transform <- function(df) {
 }
 
 model.predict <- function(df) {
-    df$pred <- predict(lime.model, newdata=df)
-    df
+    df$Juice.Volume <- as.integer(predict(lime.model, newdata=df))
+    return(df)
 }
 
 config <- read.csv("../config.file.csv")

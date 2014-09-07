@@ -10,7 +10,7 @@ model.transform <- function(df) {
 }
 
 model.predict <- function(df) {
-    lime.df[df$fromRow:df$toRow,]
+    lime.df[df$from.row:df$to.row,]
 }
 
 config <- read.csv("../config.file.csv")
