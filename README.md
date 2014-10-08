@@ -1,4 +1,5 @@
-## About
+the Lime project
+================
 
 [yhat](http://www.yhathq.com) models for a lime juicing dataset
 
