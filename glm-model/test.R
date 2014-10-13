@@ -1,7 +1,7 @@
 source("./train.R")
 
 test.df <- data.frame(Lime.Weight=c(70), Lime.Circumference=c(160))
-prediction <- predict(lime.model, test.df)
+prediction <- predict(lime.glm.model, test.df)
 
 ## Calculate misclassification error for training data
     

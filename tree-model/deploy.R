@@ -10,7 +10,7 @@ model.transform <- function(df) {
 }
 
 model.predict <- function(df) {
-    df$Juice.Volume <- as.integer(predict(lime.glm.model, newdata=df))
+    df$Juice.Volume <- as.integer(predict(lime.tree.model, newdata=df))
     return(df)
 }
 
@@ -22,4 +22,4 @@ yhat.config <- c(
     env="http://cloud.yhathq.com/"
 )
 
-yhat.deploy("limeGlm")
+yhat.deploy("limeTree")
